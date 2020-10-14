@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <app-buttons-group></app-buttons-group>
+  <ul>
+    <li *ngFor="let user of users | async;let i = index ">
+      <span>USER # {{i+1}}: </span>
+      {{ user.name }}
+    </li>
+  </ul>
+</div>

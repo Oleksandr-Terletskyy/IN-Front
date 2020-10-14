@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <div class="wrapper-user">
+    <input type="text" 
+    id="title" 
+    [(ngModel)]="users.name"
+    name="name"
+    value="user">
+    <button (click)="saveUser()" class="addBtn" 
+    [routerLink]="pagesService.nextPage"
+    >Add</button>
+    
+  </div>
+  <app-buttons-group></app-buttons-group>
+</div>

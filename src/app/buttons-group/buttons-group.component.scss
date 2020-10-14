@@ -1,0 +1,38 @@
+.buttons-wrapper {
+  height: 250px;
+  width: 250px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  button:first-child {
+    margin-right: 10px;
+  }
+
+  button {
+    background-color: black;
+    border: 1px solid lightgreen;
+    color: lightgreen;
+    padding: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      background-color: lightgreen;
+      color: black;
+    }
+  }
+}
